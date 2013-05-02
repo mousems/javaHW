@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class q1 {
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		double[] a = new double[10];
+		for(int i=0;i<10;i++){
+			
+			a[i]=input.nextDouble();
+			
+		}
+		
+		for(int i=0;i<9;i++){
+			for(int j=i;j<9;j++){
+				if(a[j]>a[j+1]){
+					double tmp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=tmp;
+
+					for(int k=0;k<10;k++){
+						System.out.print(a[i]+" ");
+					}
+					System.out.print("\n");
+				}
+				
+				
+			}
+			
+			
+		}
+	}
+}

@@ -1,0 +1,22 @@
+
+public class ex {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] test=new int[2];
+		test[0]=5;
+		test[1]=5;
+		a(test,test[1]);
+		System.out.println(test[0]+","+test[1]);
+	}
+	static void a(int[] test,int element){
+		test[0]=6;
+		test=new int[2];
+		test[0]=7;
+		test[1]=7;
+		
+	}
+}
